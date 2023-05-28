@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.carousel-inner img {
+    height: 300px;
+}
+.card-box img{
+    height: 200px;
+}
+.cart-area img {
+    height: 200px;
+}

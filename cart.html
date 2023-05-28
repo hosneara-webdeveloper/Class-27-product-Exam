@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cart page</title>
+
+</head>
+
+<body>
+
+
+    <header class=" py-2 border">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="index.html">Online<span class="text-danger">Selling</span>
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Cameras</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Tablet Phone</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Drones</a>
+                        </li>
+                        <li class="nav-item "><a class="nav-link">Contact</a></li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="side-menu" class="d-block d-lg-none">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Online<span class="text-danger">Selling</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Online <span
+                                    class="text-danger">Selling</span>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fst-italic">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Cameras</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Tablet Phone</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Drones</a>
+                                </li>
+                                <li class="nav-item "><a class="nav-link">Contact</a></li>
+
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class=" btn btn-danger" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+    <p id="login" class="d-none">somthing</p>
+    <p id="notMatch" class="d-none">somthing</p>
+    <p id="inputPassword" class="d-none">somthing</p>
+    <p id="inputPasswordConfirm" class="d-none">somthing</p>
+    <p id="login" class="d-none">somthing</p>
+
+    <section class="py-4">
+        <div class="container">
+            <h2 class="text-secondary">Cart List</h2>
+            <h5>Order Your Product</h5>
+            <hr>
+            <h3 id="error" class="text-success text-center">You didn't select your product</h3>
+            <p id="errorp" class="text-center">Please turn on the <a href="index.html" class="text-decoration-none">Home
+                    Page</a> and select
+                your product</p>
+            <div class="cart-area">
+                <div class="row">
+
+
+                    <div class="col-12 col-sm-6 col-lg-3" id="cart1">
+                        <div class="cart-box shadow rounded pt-2 pb-4 px-2">
+                            <div class="product-img text-center">
+                                <img src="images/drone.jpg" class="w-75" alt="i13">
+                            </div>
+                            <h2>Drone X Pro</h2>
+                            <h5> 4GPS & 4K UHD</h5>
+                            <p><b>Gimbal : </b>3-Axis</p>
+                            <p><b>Control Range : </b>5G Wifi FPV</p>
+                            <h3>$ <span id="price1">4000</span></h3>
+                            <h6 class="text-secondary">Quantity</h6>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" id="minus1" class="btn btn-danger fs-6">-</button>
+                                <input type="number" value="1" disabled class="w-50 text-center" id="count1">
+                                <button type="button" id="plus1" class="btn btn-danger fs-6">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-3" id="cart2">
+                        <div class="cart-box shadow rounded pt-2 pb-4 px-2">
+                            <div class="product-img text-center">
+                                <img src="images/camera.jpg" class="w-75" alt="i14">
+                            </div>
+                            <h2>Camera X Canon</h2>
+                            <h5> 24 Mega pixel</h5>
+                            <p><b>lense : </b>Ziess</p>
+                            <p><b>Battery : </b>3000 mAh</p>
+                            <h3>$ <span id="price2">5000</span></h3>
+                            <h6 class="text-secondary">Quantity</h6>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" id="minus2" class="btn btn-danger fs-6">-</button>
+                                <input type="number" value="1" disabled class="w-50 text-center" id="count2">
+                                <button type="button" id="plus2" class="btn btn-danger fs-6">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-12 col-sm-6 col-lg-3" id="cart3">
+                        <div class="cart-box shadow rounded pt-2 pb-4 px-2">
+                            <div class="product-img text-center">
+                                <img src="images/OIP.jpg" class="w-75" alt="i11">
+                            </div>
+                            <h2>Tablet model X Pro</h2>
+                            <h5> 4GPS & 4K UHD</h5>
+                            <p><b> LCD Display : </b>15 inch FHD</p>
+                            <p><b>Battery : </b>2000 mAh</p>
+                            <h3>$ <span id="price3">7000</span></h3>
+                            <h6 class="text-secondary">Quantity</h6>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" id="minus3" class="btn btn-danger fs-6">-</button>
+                                <input type="number" value="1" disabled class="w-50 text-center" id="count3">
+                                <button type="button" id="plus3" class="btn btn-danger fs-6">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-lg-3" id="cart4">
+                        <div class="cart-box shadow rounded pt-2 pb-4 px-2">
+                            <div class="product-img text-center">
+                                <img src="images/OIP (1).jpg" class="w-75" alt="i13">
+                            </div>
+                            <h2>Blackkview 10 pro </h2>
+                            <h5>6/128 GB</h5>
+                            <p><b> LCD Display : </b>10.1 Inches IPS</p>
+                            <p><b>Battery : </b>4000 mAh</p>
+                            <h3>$ <span id="price4">2000</span></h3>
+                            <h6 class="text-secondary">Quantity</h6>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                                <button type="button" id="minus4" class="btn btn-danger fs-6">-</button>
+                                <input type="number" value="1" disabled class="w-50 text-center" id="count4">
+                                <button type="button" id="plus4" class="btn btn-danger fs-6">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="box pt-5 pb-3 px-3 shadow rounded">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <h3>Sum Total</h3>
+                        <h2>$ <span id="sum">0.00</span></h2>
+                    </div>
+
+                    
+
+                    <div class="col-12 col-lg-4">
+                        <h3>Total Tax</h3>
+                        <h6><b>Duty</b>15% </h6>
+                    </div> 
+
+
+                    <div class="col-12 col-lg-4">
+                        <h3>Grand Total</h3>
+                        <h4><b>$</b> <span id="grand">0.00</span></h4>
+                        <button id="order" class="btn btn-danger float-end" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Order Now</button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Status</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3 class="text-success text-center">Your Order Successfully Received</h3>
+                                        <h5 class="text-danger text-center">Thank You</h5>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 col-lg-3">
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <h2 class="bg-warning"><span class="text-success">O</span>nline<span class=" text-danger">
+                                Selling</span></h2>
+                    </a>
+
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Request</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">View Online</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Buying Guides</a>
+                    </li>
+
+                </div>
+
+
+
+                <div class="col-12 col-lg-3">
+                    <h3>Need Help</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Contact Us</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Feedback</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Return Policy</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Privacy policy</a>
+                    </li>
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3>Delivery Information</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Picking with
+                            delivery</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Track On Order</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery Term &
+                            condition</a></li>
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3>This is our Event</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Start Selling</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Business
+                            Statics</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Store</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Transportation</a>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

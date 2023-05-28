@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <header class=" py-2 border">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Online<span class="text-danger"> Selling</span> </a>
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-2"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item "></li><a class="nav-link">Cameras</a></li>
+            <li class="nav-item "><a class="nav-link">Tablet Phone</a></li>
+            <li class="nav-item "><a class="nav-link">Drones</a></li>
+            <li class="nav-item "><a class="nav-link">Contact</a></li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="side-menu" class="d-block d-lg-none">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Online<span class="text-danger">Selling</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Online <span class="text-danger">Selling</span>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fst-italic">
+                <li class="nav-item "><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="nav-link"> Cameras</a></li>
+                <li class="nav-item "><a class="nav-link"> Tablet Phone</a></li>
+                <li class="nav-item "><a class="nav-link"> Drones</a></li>
+                <li class="nav-item "><a class="nav-link">Contact</a></li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class=" btn btn-danger" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section>
+    <div class="slider container">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-transparent"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button class="bg-transparent" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button class="bg-transparent" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="row px-2 pt-3 flex-wrap-reverse justify-content-center align-items-center"> 
+              <div class="col-12 col-lg-6 ps-5">
+
+                 <div class="px-5 ms-5 pb-4 text-center text-lg-start"> <!-- for responsive text-lg-start, it is use for 991 pxl -->
+                  <h3>Drone model X Pro</h3>
+                  <h5> 4GPS & 4K UHD</h5>
+                  <p><b>Gimbal</b> 3-Axis</p>
+                  <p><b>Control Range</b> 5G Wifi FPV</p>
+                  <h4>$ 4000</h4>
+                  <button class="btn btn-danger login">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mx-auto text-center">
+                  <img src="images/drone.jpg" alt="" class="w-50">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="row px-2 pt-3 justify-content-center align-items-center">
+              <div class="col-12 col-lg-6 ps-5">
+                <div class="px-5  ms-5 pb-4">
+                  <h3>Camera model X Canon </h3>
+                  <h5> 24 Mega pixel</h5>
+                  <p><b>Lense</b> Ziess</p>
+                  <p><b>Battery</b> 3000 mAh</p>
+                  <h4>$ 5000</h4>
+                  <button class="btn btn-danger login">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mx-auto text-center">
+                  <img src="images/camera-dslr jpg.jpg" alt="" class="w-50">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row px-2 pt-3 justify-content-center align-items-center">
+              <div class="col-12 col-lg-6 ps-5">
+                <div class="px-5  ms-5 pb-4">
+                  <h3>Tablet model X Pro</h3>
+                  <h5> 4GPS & 4K UHD</h5>
+                  <p><b>Display</b> 15 inch FHD</p>
+                  <p><b>Battery</b> 7000 mAh</p>
+                  <h4>$2000</h4>
+                  <button class="btn btn-danger login">Buy Now</button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mx-auto text-center">
+                  <img src="images/Tablet.jpg" alt="" class="w-50">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="py-4">
+    <div class="container">
+      <h2 class="fw-semibold text-center">Our Products</h2>
+      <div class="row g-2 my-1 justify-content-center">
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/camera.jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Camera Cannon EOS R7 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 1200</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/drone1.jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Drone Cannon MOS R4 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 2500</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/drone.jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Drone Cannon R5 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 3500</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row g-2 my-1 justify-content-center">
+
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/camera.jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Camera Cannon EOS R7 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 1200</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/OIP (1).jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Drone Cannon MOS R4 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 2500</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card-box shadow rounded p-3">
+            <div class="picture text-center pb-3">
+              <img class="w-100" src="images/OIP.jpg" alt="">
+
+            </div>
+            <div class="info">
+              <h3>Drone Cannon R5 </h3>
+              <h4>LCD</h4>
+              <p><b>APS-C</b>50 hz</p>
+              <p><b>Battery</b>24.2 mAh</p>
+              <H4>$ 3500</H4>
+
+            </div>
+            <button class="login btn btn-danger login">Buy Now</button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <footer class="py-5 bg-body-secondary">
+    <div class="container">
+      <div class="row">
+        <div class=" col-12 col-lg-3">
+          <a href="index.html" class="text-decoration-none text-black">
+            <h2 class="bg-warning"><span class="text-success">O</span>nline<span class=" text-danger"> Selling</span></h2>
+          </a>
+
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Request</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">View Online</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Buying Guides</a></li>
+
+        </div>
+
+
+
+        <div class="col-12 col-lg-3">
+          <h3>Need Help</h3>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Contact Us</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Feedback</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Return Policy</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Privacy policy</a></li>
+
+        </div>
+        <div class="col-12 col-lg-3">
+          <h3>Delivery Information</h3>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Picking with delivery</a>
+          </li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Track On Order</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery Term &
+              condition</a></li>
+
+        </div>
+        <div class="col-12 col-lg-3">
+          <h3>This is our Event</h3>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Start Selling</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Business Statics</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Store</a></li>
+          <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Transportation</a></li>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- main js -->
+  <script src="js/index.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

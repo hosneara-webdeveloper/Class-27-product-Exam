@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>login</title>
+</head>
+
+<body>
+    <header class=" py-2 border">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="index.html">Online<span class="text-danger">Selling</span>
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Cameras</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Tablet Phone</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link"> Drones</a>
+                        </li>
+                        <li class="nav-item "><a class="nav-link">Contact</a></li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="side-menu" class="d-block d-lg-none">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Online<span class="text-danger">Selling</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Online <span
+                                    class="text-danger">Selling</span>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fst-italic">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Cameras</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Tablet Phone</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link"> Drones</a>
+                                </li>
+                                <li class="nav-item "><a class="nav-link">Contact</a></li>
+
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class=" btn btn-danger" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+    <section class="">
+        <div class="container">
+            <h1 class="text-center py-3">Login Us</h1>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex py-3">
+                        <img class="w-100" src="images/3d-illustration-computer-monitor-login-screen.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" placeholder="Email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" placeholder="Password" class="form-control" id="inputPassword">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPasswordConfirm" class="form-label">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" class="form-control"
+                                id="inputPasswordConfirm">
+
+                            <h5 id="notMatch" class="text-danger pt-2">Password Incorrect</h5>
+                        </div>
+
+
+
+                    </form>
+                    <div class="col-12 pt-4">
+                        <button type="submit" id="login" class="btn btn-danger disabled" disabled>Login</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 col-lg-3">
+                    <a href="index.html" class="text-decoration-none text-black">
+                        <h2 class="bg-warning"><span class="text-success">O</span>nline<span class=" text-danger">
+                                Selling</span></h2>
+                    </a>
+
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Request</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">View Online</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Buying Guides</a>
+                    </li>
+
+                </div>
+
+
+
+                <div class="col-12 col-lg-3">
+                    <h3>Need Help</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Contact Us</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Feedback</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Return Policy</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Privacy policy</a>
+                    </li>
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3>Delivery Information</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Picking with
+                            delivery</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Track On Order</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Delivery Term &
+                            condition</a></li>
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3>This is our Event</h3>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Start Selling</a>
+                    </li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Business
+                            Statics</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Store</a></li>
+                    <li class="list-unstyled"><a class="text-decoration-none text-secondary" href="#">Transportation</a>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/index.js">
+
+
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
